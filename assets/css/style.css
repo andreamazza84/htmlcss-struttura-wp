@@ -308,6 +308,53 @@ h4{
 /* /main */
 
 /* footer */
-
+footer{
+  width: 100%;
+  height: 600px;
+  float: left;
+}
 
 /* /footer */
+.more-info:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.recent{
+  vertical-align: top;
+}
+
+.post, .comment, .categories{
+  width: 20%;
+}
+
+.widget{
+  width: 40%;
+  text-align: justify;
+}
+
+.widget p{
+  padding-left:10px;
+  line-height: 20px;
+}
+
+.contacts:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.copyright, .social{
+  width:50%;
+}
+
+.social{
+  text-align: right;
+}
+
+.social i{
+  color: #555;
+  font-size: 20px;
+  padding-right: 5px;
+}
