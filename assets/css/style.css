@@ -8,7 +8,25 @@
 }
 /* /default settings reset */
 
+body{
+  background-color: #655;
+}
+
 /* utility */
+.container{
+  width: 90vw;
+  background-color: #888;
+  margin: auto;
+  padding: 30px 0 30px 0;
+}
+
+.container::after{
+  /* clearfix */
+  content:"";
+  display: table;
+  clear: both;
+}
+
 .fl{
   float: left;
 }
@@ -22,20 +40,10 @@
 }
 /* /utility */
 
-body{
-  background-color: #655;
-}
-
-.container{
-  width: 90%;
-  background-color: #888;
-  margin: auto;
-  padding: 30px 0 30px 0;
-}
-
+/* header */
 header{
   width: 100%;
-  height: 40vh;
+  height: 200px;
 }
 
 .presentation{
@@ -65,10 +73,6 @@ header{
   background-color: rgba(0,0,0,0.2)
 }
 
-a{
-  color: white;
-  text-decoration: none;
-}
 
 h1{
   font-size: 40px;
@@ -80,6 +84,18 @@ h3{
   font-weight: 100;
 }
 
+a{
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.presentation a{
+  color: white;
+}
+
 .nav-bar{
   display: inline-block;
   width: 100%;
@@ -89,7 +105,7 @@ h3{
   position: relative;
 }
 
-ul{
+.nav-bar ul{
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -99,20 +115,63 @@ ul{
   transform: translate(-50%, -50%);
 }
 
-ul li{
+.nav-bar ul li{
   display: inline-block;
   padding: 0 10px 0 10px;
   height: 100%;
-  list-style: none;
 }
 
-ul li:hover{
+.nav-bar ul li:hover{
   background-color: #333;
 }
 
-ul li a{
+.nav-bar ul li a{
+  color: white;
   display: inline-block;
   height: 100%;
   font-size: 15px;
-  line-height: 6vh;
+  line-height: 30px;
 }
+/* /header */
+
+/* main */
+/* side left menu */
+
+.left-container{
+  width: 30vw;
+  height: 800px;
+  padding:10px;
+  margin:20px;
+  float: left;
+  background-color: white;
+}
+
+.left-container .box-title{
+  color: #222;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.left-container .menu ul li{
+  width: 90%;
+  height: 2em;
+  text-transform: capitalize;
+  margin: auto;
+  line-height: 2em;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.left-container .menu ul li:hover{
+  background-color: #eee;
+  border-top: 1px solid #555;
+}
+
+.left-container .menu ul li a{
+  color: #aaee22;
+}
+
+
+/* /side left menu */
+
+/* /main */
