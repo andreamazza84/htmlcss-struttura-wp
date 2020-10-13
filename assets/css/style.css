@@ -38,6 +38,10 @@ body{
 .capital{
   text-transform: uppercase;
 }
+
+.nocap{
+  text-transform: none;
+}
 /* /utility */
 
 /* header */
@@ -138,38 +142,58 @@ ul li {
 /* side left menu */
 
 .left-container{
-  width: 30vw;
-  height: 800px;
-  padding:10px;
-  margin:20px;
+  width: 25vw;
+  /* height: 800px; */
   float: left;
-  background-color: white;
+  background-color: #222;
 }
 
-.left-container .box-title{
+.box{
+  background-color: white;
+  margin:20px;
+  padding: 20px;
+}
+
+.sidebox h4{
   color: #222;
   font-size: 18px;
   margin: 10px;
+  text-transform: capitalize;
+
 }
 
-.left-container .menu ul li{
+.sidebox ul li{
   width: 90%;
   height: 2em;
-  text-transform: capitalize;
   margin: auto;
   line-height: 2em;
   padding-left: 10px;
   border-radius: 3px;
+  text-transform: capitalize;
 }
 
-.left-container .menu ul li:hover{
+
+.sidebox ul li:hover{
   background-color: #eee;
   border-top: 1px solid #555;
 }
 
-.left-container .menu ul li a{
-  color: #aaee22;
+.sidebox ul li a{
+  color: #aaee22; /*light green*/
 }
+
+.center-container{
+  width: 40vw;
+  height: 1200px;
+  float: left;
+  background-color: #333;
+}
+
+.article{
+
+}
+
+
 
 
 /* /side left menu */
